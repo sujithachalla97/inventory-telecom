@@ -9,7 +9,7 @@ import authRoutes from "./routes/auth.js";
 import productRoutes from "./routes/Product.js";
 import supplierRoutes from "./routes/supplier.js";
 import transactionRoutes from "./routes/transaction.js";
-import userRoutes from "./routes/user.js";
+import userRoutes from "./routes/user.routes.js";
 
 dotenv.config();
 const app = express();
