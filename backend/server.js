@@ -10,7 +10,7 @@ import productRoutes from "./routes/Product.js";
 import supplierRoutes from "./routes/supplier.js";
 import transactionRoutes from "./routes/transaction.js";
 import userRoutes from "./routes/user.routes.js";
-
+import staffRoutes from "./routes/staff.js";
 dotenv.config();
 const app = express();
 
@@ -24,7 +24,7 @@ app.use("/api/products", productRoutes);
 app.use("/api/suppliers", supplierRoutes);
 app.use("/api/transactions", transactionRoutes);
 app.use("/api/users", userRoutes);
-
+app.use("/api/staff", staffRoutes);
 // Health check
 app.get("/api", (req, res) => {
   res.json({ message: "Telecom Inventory API is running 🚀" });
