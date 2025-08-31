@@ -99,7 +99,7 @@ const Home = () => {
 
   const handleCTA = () => {
     if (user) navigate("/dashboard");
-    else navigate("/");
+    else navigate("/login");
   };
 
   return (
